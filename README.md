@@ -42,8 +42,40 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 |[HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)	
 |[CSS3](https://developer.mozilla.org/pt-BR/docs/Archive/CSS3)		
 |[JavaScript](https://www.javascript.com/)
+|[SASS/SCSS](https://sass-lang.com/guide)
 
+## :dvd: **Executar o Projeto**
 
+### :desktop_computer: ** Para telas >=1700px até 2000px**
+
+Entre na pasta e execute os seguintes comandos:
+
+<details>
+<summary><i>com <b>npm</b></i></summary>
+
+```bash
+# Instalar dependências
+$ npm install
+
+# Instalar Sass
+$ npm Install Sass -G
+
+# Iniciar Sass
+$ sass --watch sass/main.scss/css:style.css
+```
+<details>
+<summary><i>com <b>Yarn</b></i></summary>
+	
+```bash
+# Instalar dependências
+$ Yarn
+
+# Instalar Sass
+$ yarn add node-sass
+
+# Iniciar Sass
+$ sass --watch sass/main.scss/css:style.css
+```
 
 </div>
 
