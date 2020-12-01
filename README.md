@@ -2,15 +2,6 @@
   <img alt="boacompra" src="https://uploaddeimagens.com.br/images/002/985/825/full/not-found.png?1606850157 width="500px"/>
 <p>
 
-<p align="center"> 
-  <img alt="Tamanho do Repositório" src="https://img.shields.io/github/repo-size/rafaelfachinelli/eNaturalist?color=219653&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rafaelfachinelli/eNaturalist?color=219653&style=for-the-badge">
-  <a href="https://github.com/rafaelfachinelli">
-    <img alt="Feito pela eNaturalist" src="https://img.shields.io/badge/Team-eNaturalist-%219653?color=219653&style=for-the-badge">
-  </a>
-  <img alt="Licença do Projeto" src="https://img.shields.io/github/license/rafaelfachinelli/Proffy?color=219653&style=for-the-badge"/>
-<p>
-
 <p align="center">
  <a href="#computer-sobre">Sobre</a> •
  <a href="#hammer-tecnologias">Tecnologias</a> •
