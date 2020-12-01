@@ -82,7 +82,7 @@ $ sass --watch sass/main.scss/css:style.css
 ---
 
 Feito com 💚 pela Laylia 👋🏽 Entre em contato!
-[![Linkedin Badge](https://img.shields.io/badge/-LayliaDhenyfer-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/laylia-dhennyfe-74b119197/)](https://www.linkedin.com/in/tgmarinho/) 
+[![Linkedin Badge](https://img.shields.io/badge/-LayliaDhenyfer-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/laylia-dhennyfe-74b119197/)](https://www.linkedin.com/in/laylia-dhenyfer-74b119197) 
 ![Badge](https://img.shields.io/github/followers/LayDhenyfer?label=SIGA%20ME&style=social)
 [![Outlook Badge](https://img.shields.io/badge/-layliadhenyfer@outlook.com-D14836?style=flat-square&logo=gmail&logoColor=white&link=mailto:layliadhenyfer@outlook.com)](mailto:layliadhenyfer@outlook.com)
 
