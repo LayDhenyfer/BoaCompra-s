@@ -14,6 +14,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Para fazer qualquer att nos códigos, vá até o cmd, abra o local onde foi baixado o arquivo e digite... sass --watch sass/main.scss:css/style.css.
 ````
 Se divirta! 💖 
-
-
+Apenas para 1700px ate 2000px
 Para visualizar a pág aperte <a href="https://laydhenyfer.github.io/BoaCompra-s/"> aqui 🙋</a>
