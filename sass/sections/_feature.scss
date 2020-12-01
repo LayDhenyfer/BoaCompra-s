@@ -1,0 +1,120 @@
+.features {
+    &__traco {
+        width: 1037px;
+        height: 40px;
+        margin-left: 20rem;
+        font: {
+            size: 2.5rem;
+            weight: bold;
+        }
+        letter-spacing: 0.10em;
+        line-height: 40px;
+        text-align: center;
+        &::before {
+            position: relative;
+            display: block;
+            height: 5px;
+            content: " ";
+            right: 15.5rem;
+            top: 2rem;
+            width: 13.5rem;
+            height: 3px;
+            background: $color-second;
+        }
+        &::after {
+            position: relative;
+            display: block;
+            height: 5px;
+            content: "";
+            left: 88rem;
+            top: -1.5rem;
+            width: 13.2rem;
+            height: 3px;
+            background: $color-second;
+        }
+        @include respond(desktop) {
+            //meu not
+            margin-left: 15.8%;
+            &::before {
+                right: 8rem;
+            }
+            &::after {
+                top: -2rem;
+                left: 98rem;
+            }
+        }
+        animation: moveInBottom .9s ease-out 1s;
+            animation-fill-mode: backwards;
+    }
+    &__long-copy {
+        text-align: center;
+        width: 58%;
+        font-size: 2rem;
+        margin-left: 27rem;
+        padding: 1.5rem;
+        line-height: 2.5rem;
+        animation: moveInBottom .9s ease-out 1s;
+            animation-fill-mode: backwards;
+        @include respond(desktop) {
+            margin-left: 32rem;
+        }
+    }
+    &__flex {
+        margin-left: 1.5rem;
+        padding: 3rem 0 0 0;
+        display: flex;
+        flex-wrap: nowrap;
+        .front {
+            //img //arrumar
+            position: relative;
+        }
+    }
+    &__block {
+        width: 22.5rem;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+    }
+    @for $i from 1 through 5 {
+        &__item-#{$i} {
+            padding-top: .8rem * $i;
+        }
+    }
+    @for $i from 1 to 3 {
+        &__iten-#{$i} {
+            padding-top: 1.2rem * 1.3;
+        }
+    }
+    p {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    &#{$name}-1 {
+        #{$attr}: 2.5rem;
+    }
+    &#{$name}-2 {
+        #{$attr}: 2rem;
+    }
+    &#{$name}-6 {
+        #{$attr}: 3.8rem;
+    }
+    &__gren {
+        position: absolute;
+        width: 225px;
+        height: 65px;
+        left: 0;
+        top: 7rem;
+        background: linear-gradient(to right,#91D3CE,#68ada8, #4fc27b, #3499b3,#29726c);
+        background-size: 300% 300%;
+        animation: gradient 8s ease infinite;
+    }
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}

@@ -1,0 +1,88 @@
+.heading {
+    position: relative;
+    &__first {
+        position: absolute;
+        width: 55rem;
+        height: 3.1rem;
+        top: 11rem;
+        left: -15rem;
+        font-weight: 600;
+        font-size: 3.8rem;
+        line-height: 5rem;
+        letter-spacing: 0.11em;
+        color: $color-white;
+        @include respond(desktop) {
+            //not
+            top: 25rem;
+            left: -10rem;
+        }
+        @include respond(big-desktop) {
+            top: 20rem;
+        }
+        transition: 600ms ease-in-out;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    }
+    &__secondary {
+        position: absolute;
+        width: 56rem;
+        height: 3.1rem;
+        top: 32.9rem;
+        left: -15rem;
+        font-weight: 300;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        letter-spacing: 0.03em;
+        color: $color-white;
+        @include respond(desktop) {
+            //not
+            top: 50rem;
+            left: -10rem;
+        }
+        @include respond(big-desktop) {
+            top: 43rem;
+        }
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+    }
+    &__marcas {
+        position: absolute;
+        width: 100%;
+        top: 42rem;
+        left: -19.6rem;
+        display: flex;
+        &--row {
+            flex-direction: row;
+        }
+        @include respond(desktop) {
+            //1440
+            top: 60rem;
+            left: -13.6rem;
+        }
+        @include respond(big-desktop) {
+            top: 54rem;
+        }
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+    }
+    &__logo {
+        position: relative;
+        width: 20rem;
+        text-align: center;
+        font-size: 1.5em;
+        &-img {
+            height: 4.5rem;
+        }
+    }
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}

@@ -1,0 +1,98 @@
+.section-map {
+    padding: 9rem 0;
+}
+
+.mundi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &__heading {
+        flex-direction: column;
+        position: absolute;
+        left: 55rem;
+        top: 0;
+        max-width: 90rem;
+        width: 100%;
+        z-index: 10;
+        &-main {
+            letter-spacing: 0.11em;
+            font-size: 3rem;
+            padding-bottom: 5rem;
+            animation-name: moveInLeft;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+        }
+        &-two {
+            position: absolute;
+            padding-left: 30rem;
+            max-width: 100rem;
+            width: 92.1rem;
+            font-size: 2.1rem;
+            line-height: 3.8rem;
+            animation-name: moveInRight;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            
+        }
+        @include respond(desktop) {
+            right: 35rem;
+            top: -4rem;
+        }
+
+    }
+    &__points {
+        margin: 21.5rem 0 0 40rem;
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+    &__itens {
+        &-item {
+            line-height: 3rem;
+            &::marker {
+                font-size: 2.8rem;
+            }
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i})::marker {
+                    @include set-styles(#{$i});
+                }
+            }
+            
+        }
+        &-null {
+            list-style: none;
+        }
+        animation: moveInBottom .9s ease-out 1s;
+            animation-fill-mode: backwards;
+    }
+    &__map {
+        &-mapin {
+            margin: -5rem 0 0 11rem;
+            width: 80rem;
+        }
+        &-vetor {
+            width: 55rem;
+            position: absolute;
+            right: 0;
+            top: 30%;
+            @include respond(desktop) {
+                margin-left: 25.5rem;
+            }
+            @include respond(big-desktop) {
+                margin-left: 31.5rem;
+            }
+            @media only screen and (max-width:1440px) {
+                margin-left: 14rem;
+            }
+        }
+    }
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}

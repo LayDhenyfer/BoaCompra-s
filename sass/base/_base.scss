@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html { //lattop medium from 1201px to 1799px
+    font-size: 62.5%; // 1rem = 10px
+
+    @include respond(tab-land){ // for laptop max 1200px
+        font-size: 56.25%; // 1rem = 9px
+    }
+    @include respond(tab-port){ //  tablet max 900px
+        font-size: 50%; // 1rem = 8px
+    }
+    @include respond(big-desktop){ // desktop min 1800px
+        font-size: 75%; // 1rem = 12px
+    }
+    
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+
+}
+
+
+
+::selection {
+    background-color:  $color-principal;
+    color: $color-white;
+}

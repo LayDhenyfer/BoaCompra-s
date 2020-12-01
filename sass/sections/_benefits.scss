@@ -1,0 +1,105 @@
+.benefits {
+    margin: -6.5rem 0;
+    &__traco {
+        width: 1037px;
+        height: 40px;
+        margin-left: 20rem;
+        font: {
+            size: 2.5rem;
+            weight: bold;
+        }
+        letter-spacing: 0.10em;
+        line-height: 40px;
+        text-align: center;
+        &::before {
+            position: relative;
+            display: block;
+            height: 5px;
+            content: " ";
+            right: 6rem;
+            top: 2rem;
+            width: 13.5rem;
+            height: 3px;
+            background: #CAD665;
+        }
+        &::after {
+            position: relative;
+            display: block;
+            height: 5px;
+            content: "";
+            left: 78.5rem;
+            top: -1.5rem;
+            width: 13.2rem;
+            height: 3px;
+            background: #CAD665;
+        }
+        @include respond(desktop) {
+            margin-left: 24rem;
+            &::before {
+                right: -2rem;
+            }
+            &::after {
+                top: -2.1rem;
+                left: 88rem;
+            }
+        }
+        animation: moveInBottom .9s ease-out 1s;
+            animation-fill-mode: backwards;
+    }
+    &__long-copy {
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+        margin-left: 0rem;
+        padding: 1.5rem;
+        line-height: 2.5rem;
+        animation: moveInBottom .9s ease-out 1s;
+            animation-fill-mode: backwards;
+    }
+    &__flex {
+        padding: 3rem 0 0 3rem;
+        display: flex;
+        flex-wrap: nowrap;
+        @include respond(desktop) {
+            //1680
+            padding-left: 13.5rem;
+        }
+    }
+    &__block {
+        width: 22.5rem;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+    }
+    &#{$bene}-1 {
+        margin-top: 2.1rem;
+    }
+    &#{$bene}-2 {
+        margin: 1.5rem 0 0 5rem;
+    }
+    &#{$bene}-3 {
+        margin: 2.1rem 0 0 2rem;
+    }
+    &#{$bene}-4 {
+        padding: 0 0 .1rem 2rem;
+    }
+    .reset {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        &--menos {
+            padding-left: 5rem;
+        }
+        &--volte {
+            padding-left: 3.2rem;
+        }
+    }
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}

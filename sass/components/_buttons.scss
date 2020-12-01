@@ -1,0 +1,111 @@
+.btn-start {
+    // from
+    max-width: 15rem;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1rem;
+    margin-right: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #CAD665;
+    border: none;
+    @include border-radius(.7rem);
+    font-weight: 750;
+    transition: all .8s;
+    &:hover {
+        background-color: #a4c44c;
+    }
+    &--small {
+        margin-right: -.5rem;
+    }
+    @include respond(laptop) {
+        width: 18rem;
+    }
+}
+
+.btn {
+    // card
+    &:link,
+    &:visited {
+        outline: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 5rem;
+        display: inline-block;
+        transition: all .5s;
+        position: relative;
+        font-size: 1.6rem;
+        cursor: pointer;
+        @include respond(desktop) {
+            //not
+            margin-left: 33.5%;
+        }
+        @include respond(laptop) {
+            display: none;
+        }
+        @include respond(tablet) {
+            display: none;
+        }
+        @include respond(phone) {
+            display: none;
+        }
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+    &--white {
+        @include border-radius(.8rem);
+        background-color: $color-white;
+        color: #777;
+        &::after {
+            background-color: $color-white;
+        }
+    }
+    &--green {
+        content: "\2192";
+        width: 52rem;
+        height: 5.5rem;
+        text-align: center;
+        font-weight: bolder;
+        @include border-radius(.8rem);
+        margin: 12rem 0 0 37rem;
+        line-height: 5.5rem;
+        letter-spacing: 0.11em;
+        background-color: #E5CF48;
+        color: $color-black;
+        &::hover {
+            background-color: #a4c44c;
+        }
+        &::after {
+            background-color: #a4c44c;
+        }
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        @include border-radius(.8rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .8s;
+    }
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+    
+}

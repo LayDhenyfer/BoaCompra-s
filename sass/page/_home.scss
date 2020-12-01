@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row-photo {
+    max-width: 1140px;
+    position: relative;
+    margin: 0 auto;
+    outline: none;
+    @include clearfix;
+}
+
+.row {
+    max-width: 1500px;
+    margin: 0 auto;
+    outline: none;
+}
+
+.wrapper {
+    max-width: 114rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-c {
+    width: 100px;
+    padding: 3.5rem 0 3rem 0;
+    margin-left: -5.5rem;
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.home {
+    position: relative;
+    height: 85.4vh;
+    width: 100%;
+    opacity: 1;
+    &__img {
+        background: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)),
+        url(../img/teste-min.jpg) {
+            image: -webkit-linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../img/teste-min.jpg);
+            size: cover;
+            position: center;
+            attachment: fixed;
+        }
+    }
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.section-home {
+    width: 100%;
+    position: relative;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    &__span {
+        background-image: linear-gradient(180deg, #E5CF48 50.71%, rgba(229, 207, 72, 0.25) 100%);
+        width: 64.3rem;
+        height: 109.5rem; //1980
+        z-index: 6;
+        @include absCenter;
+        @include respond(big-desktop) {
+            height: 160%;
+        }
+        @include respond(desktop) {
+            height: 160%; // meu not
+        }
+    }
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}

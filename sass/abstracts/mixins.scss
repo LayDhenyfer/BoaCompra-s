@@ -1,0 +1,68 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    //section-home--span
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+@mixin set-styles($arg) {
+    @extend %color#{$arg};
+}
+
+@mixin respond($breakpoint) {
+    //600px/16 the same for phone max 600px //667
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 599px) {
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==tablet {
+        @media only screen and (min-width: 600px) and (max-width: 959px) {
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==laptop {
+        @media only screen and (min-width: 960px) and (max-width: 1699px) {
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==desktop {
+        @media only screen and (min-width: 1700px) and (max-width: 1919px) {
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 1920px) and (max-width: 5000px) {
+            @content
+        }
+        ;
+    }
+}

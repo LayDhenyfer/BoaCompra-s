@@ -1,0 +1,207 @@
+/****FORM******/
+
+.form {
+    top: 13.5rem;
+    left: 50rem;
+    z-index: 7;
+    position: absolute;
+    background: #F4F4F4;
+    width: 61rem;
+    height: 40rem;
+    padding: 4.5rem 0;
+    &__container {
+        max-width: 80rem;
+        width: 100%;
+        &--flex {
+            display: flex;
+        }
+        &--flex-wrap {
+            flex-wrap: wrap;
+        }
+    }
+    &__header-first {
+        width: 54%;
+        height: 2.8rem;
+        margin-bottom: 4rem;
+        margin-left: 23%;
+        font-weight: bolder;
+        font-size: 1.7rem;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.11em;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+    &__header-secondary {
+        width: 27.3rem;
+        height: 2.8rem;
+        margin-left: 27%;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 140%;
+        text-align: center;
+        color: $color-black;
+    }
+    &__header-tertiary {
+        width: 55rem;
+        height: 3.1rem;
+        margin-top: -.5rem;
+        margin-bottom: 2rem;
+        padding-left: 6rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 140%;
+        text-align: center;
+        color: $color-black;
+    }
+    &__inputs {
+        max-width: 63rem;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 3.5rem;
+        *:focus {
+            outline: none;
+        }
+        &--place {
+            max-width: 26rem;
+            width: 100%;
+            height: 3.5rem;
+            right: 10rem;
+            padding: .4rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: .3px solid rgba(134, 133, 133, 0.479);
+            box-sizing: border-box;
+        }
+    }
+    @include respond(desktop) {
+        //meu
+        left: 60%;
+        margin-top: 12rem;
+        height: 43rem;
+    }
+    @include respond(big-desktop) {
+        margin-top: 3rem;
+    }
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+select {
+    background-color: #fff;
+    color: #757575;
+    &:hover {
+        color: #443c0b;
+    }
+}
+
+
+/**************CHECKBOX*********/
+
+.box {
+    width: 100%;
+    padding: 0 4rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__space {
+        display: flex;
+        flex-direction: column;
+        &-one {
+            font-size: 1.1rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+.wrapper-small {
+    padding: 3.4rem 0;
+}
+
+.form-small {
+    background: #F4F4F4;
+    width: 60.5rem;
+    height: 30rem;
+    &__container {
+        max-width: 80rem;
+        width: 100%;
+        &--flex {
+            display: flex;
+        }
+        &--flex-wrap {
+            flex-wrap: wrap;
+        }
+    }
+    &__header-secondary {
+        max-width: 27.3rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        text-align: center;
+        color: $color-black;
+        padding-top: 3.3rem;
+    }
+    &__header-tertiary {
+        margin-bottom: 3rem;
+        width: 55rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+        text-align: center;
+        color: $color-black;
+    }
+    &__inputs {
+        max-width: 70rem;
+        width: 100%;
+        *:focus {
+            outline: none;
+        }
+        &--place {
+            max-width: 26rem;
+            width: 100%;
+            height: 3.5rem;
+            padding: .4rem;
+            margin-right: 1rem;
+            margin-bottom: 1.8rem;
+            border: .3px solid rgba(134, 133, 133, 0.479);
+            box-sizing: border-box;
+        }
+    }
+    @include respond(laptop) {
+        display: none;
+    }
+    @include respond(tablet) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+select {
+    background-color: #fff;
+    color: #757575;
+    &:hover {
+        color: #443c0b;
+    }
+}
+
+
+/**************CHECKBOX*********/
+
+.box-container {
+    width: 100%;
+    padding: 0 4rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__space {
+        display: flex;
+        flex-direction: column;
+        &--one {
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+        }
+    }
+}
